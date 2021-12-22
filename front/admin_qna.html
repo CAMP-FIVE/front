@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관리자 페이지 - Q&A</title>
+<link rel="stylesheet" href="./admin_qna.css">
+<style type="text/css">
+	body{
+		line-height:2.5em;		
+	}
+	ul, li{ 
+	list-style:none;
+	text-align:center;
+	padding:0;
+	margin:0;
+    }
+</style>
+
+</head>
+<body>
+	<header>
+		<a href="./main.html"><img src="./image/logo.png" alt=""></a>
+	</header>
+	
+	<div id="mainWrapper">
+	<nav>
+		<ul id="navi">
+			<li>
+				<a href="">캠핑관련정보</a>
+				<ul>
+					<li><a href="">캠핑소식</a></li>
+					<li><a href="">캠핑안전수칙</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">캠핑장조회</a>
+				<ul>
+					<li><a href="">캠핑장검색</a></li>
+					<li><a href="">사업자 캠핑장 정보변경</a></li>
+				</ul>
+			</li>
+
+			<li>
+				<a href="">커뮤니티</a>
+				<ul>
+					<li><a href="">캠핑후기</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">마이페이지</a>
+				<ul>
+					<li><a href="">회원정보변경</a></li>
+					<li><a href="">찜한목록보기</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">고객센터</a>
+				<ul>
+					<li><a href="">공지사항</a></li>
+					<li><a href="">Q&A</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<hr>
+
+	<h1 align="left" style="text-shadow: 3px 3px 5px #39796b; color: #004d40;"><i>관리자 페이지</i></h1>
+	<h3 style="color: #004d40;"><i>Q&A 게시판</i></h3>
+
+	<br><br>
+	<!-- 사이드 메뉴 -->
+	<div id="sidebar">
+
+		<ul id="sidemenu">
+			<li class="group">
+				<div class="title"><a href="">사업자</a></div>
+				<ul class="sub">
+					<li><a href="">사업자회원관리</a></li>
+					<li><a href="">사업자승인관리</a></li>
+				</ul>
+			</li>
+			<li class="group">
+				<div class="title"><a href="">개인</a></div>
+				<ul class="sub">
+					<li><a href="">개인회원관리</a></li>
+				</ul>
+			</li>
+			<li class="group">
+				<div class="title"><a href="">게시판</a></div>
+				<ul class="sub">
+					<li><a href="">공지사항 게시판</a></li>
+					<li><a href="">Q&A 게시판</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+<!-- 게시물이 출력될 영역 -->
+<div id="btn">
+	<input type="button" id="btn1" value="글쓰기">
+    <input type="button" id="btn2" value="수정">
+    <input type="button" id="btn3" value="삭제">
+    <input type="button" id="btn4" value="답변쓰기">
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">전체선택
+<br>
+
+<table id="tb">
+	<tr>
+		<th></th>
+		<th>No</th>
+		<th>제목</th>
+		<th>작성자</th>
+		<th>등록일</th>
+	</tr>
+	<tr>
+		<th><input type="checkbox"></th>
+		<td>1</td>
+		<td><a href="">사업자 정보가 변경되었어요!</a></td>
+		<td>양서연</td>
+		<td>2021-12-16</td>
+	</tr>
+	<tr>
+		<th><input type="checkbox"></th>
+		<td>2</td>
+		<td>서울에 추천하는 캠핑장이 있을까요?</td>
+		<td>주한나</td>
+		<td>2021-12-16</td>
+	</tr>
+</table>
+
+
+<br><br><br><br>
+
+<!-- 게시판 페이징 영역 -->
+<ul id="paging">  
+	<li><a href="#">◀</a></li>
+	<li><a href="#">1</a></li>
+	<li><a href="#">2</a></li>
+	<li><a href="#">3</a></li>
+	<li><a href="#">4</a></li>
+	<li><a href="#">5</a></li>
+	<li><a href="#">6</a></li>
+	<li><a href="#">7</a></li>
+	<li><a href="#">8</a></li>
+	<li><a href="#">9</a></li>
+	<li><a href="#">10</a></li>
+	<li><a href="#">▶</a></li>
+</ul>
+
+<br>
+
+	<!-- footer 영역 -->
+    <footer>
+        <div id="bottomMenu">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">캠핑장등록안내</a></li>
+            </ul>
+
+        </div> 
+        <div id="company">
+            <p id="footertag">서울특별시 강남구 테헤란로 14길 6, 남도빌딩 2F~6F KH정보교육원</p>
+            <p id="footertag">TEL : 02-2345-6666 / FAX : 02-2224-5555</p>
+            <p id="footertag">EMAIL : <a href="">webmaster@iei.or.kr</a></p>
+            <p id="footertag">Copyrights(c) 2021 KOREA TOURISM ORGANIZATION ALL RIGHTS RESERVED.</p>
+        </div>
+
+		<div id="sns">
+			<ul>
+				<li><a href="#"><img src="./image/facebook.png" width="30px" height="30px"></a></li>
+				<li><a href="#"><img src="./image/instagram.png" width="30px" height="30px"></a></li>
+				<li><a href="#"><img src="./image/twitter.png" width="30px" height="30px"></a></li>
+				<li><a href="#"><img src="./image/youtube.png" width="30px" height="30px"></a></li>
+			</ul>
+		</div>
+    </footer>
+
+		<!-- 하단의 TOP버튼 -->
+		<button class="scroll-top" id="js-button">
+			<i class="fa fa-chevron-up" aria-hidden="true">TOP</i>
+		</button>
+	
+		<script type="text/javascript">
+			scrollTop('js-button', 100); // 화면이 위로 올라가는 시간 0.1초
+			function scrollTop(elem,duration) {
+				let target = document.getElementById(elem);
+	
+			target.addEventListener('click', function() {
+				let currentY = window.pageYOffset; 
+				let step = duration/currentY > 1 ? 10 : 100; // 한번에 움직이는 스크롤양
+				let timeStep = duration/currentY * step;
+				let intervalID = setInterval(scrollUp, timeStep);
+	
+			function scrollUp(){
+				currentY = window.pageYOffset;
+				if(currentY === 0) {
+					clearInterval(intervalID);
+				} else {
+					scrollBy( 0, -step );
+				}
+			}
+		});
+	}
+		</script>
+		
+</body>
+</html>
+

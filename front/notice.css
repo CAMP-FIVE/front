@@ -1,0 +1,210 @@
+#mainWrapper{
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto; /*가운데 정렬*/
+}
+
+#mainWrapper > ul > li:first-child {
+    text-align: center;
+    font-size:14pt;
+    height:40px;
+    vertical-align:middle;
+    line-height:30px;
+}
+
+header {
+    text-align: center;
+}
+
+/* 상단 NAVI 영역 */
+nav {
+    float: right;
+    width: 100%;
+    height: 150px;
+    /* background-color: darkseagreen; */
+}
+
+#navi {
+    list-style-type: none;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+#navi>li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 40px;
+}
+
+#navi a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 600;
+    height: 100%;
+    display: block;
+    line-height: 35px;
+}
+
+#navi a:hover {
+    color: darkseagreen;
+}
+
+#navi>li>ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+#navi>li>a:hover+ul {
+    display: block;
+}
+
+#navi>li>ul:hover {
+    display: block;
+}
+
+#navi>li>ul a {
+    font-size: 1.2em;
+}
+
+#ulTable {margin-top:10px;}
+
+/*게시판 제목 라인*/
+#ulTable > li:first-child > ul > li {
+    background-color:#439889;
+    font-weight:bold;
+    text-align:center;
+}
+
+#ulTable > li > ul {
+    clear:both;
+    padding:0px auto;
+    position:relative;
+    min-width:40px;
+}
+#ulTable > li > ul > li { 
+    float:left;
+    font-size:10pt;
+    border-bottom:1px solid silver;
+    vertical-align:baseline;
+
+}    
+
+/*게시판 테이블 사이즈 비율*/
+#ulTable > li > ul > li:first-child           	{width:10%;} /*No 열 크기*/
+#ulTable > li > ul > li:first-child +li       	{width:45%;} /*제목 열 크기*/
+#ulTable > li > ul > li:first-child +li+li    	{width:20%;} /*작성일 열 크기*/
+#ulTable > li > ul > li:first-child +li+li+li 	{width:15%;} /*작성자 열 크기*/
+#ulTable > li > ul > li:first-child +li+li+li+li{width:10%;} /*조회수 열 크기*/
+
+#liSearchOption {clear:both;}
+#liSearchOption > div {
+    margin:0 auto; 
+    margin-top: 30px; 
+    width:auto; 
+    height:100px; 
+    /* transform: scale(1.2); */ /*검색창사이즈*/
+}
+
+/*게시판 내용 정렬기준 (왼쪽정렬)*/
+.left {
+    text-align : left;
+}
+
+/* 하단 paging 영역 */
+#paging {
+	list-style:none;
+    display: flex;
+    justify-content: center;
+}
+#paging li {
+    float:left;
+}
+
+#paging li a {
+	float:left;
+	padding:4px;
+	margin-right:3px;
+	width:15px;
+	color:#000;
+	font:bold 12px tahoma;
+	border:1px solid #eee;
+	text-align:center;
+	text-decoration:none;
+}
+#paging li a:hover, #paging li a:focus {
+	color:#fff;
+	background-color:rgb(179, 245, 177);
+}
+
+/* 하단 FOOTER 영역 */
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 170px;
+    background-color: darkseagreen;
+    border-top: 2px solid #222;
+    margin: 0 auto; /*가운데 정렬*/
+}
+
+#bottomMenu{
+    clear: left;
+    margin-top: 15px;
+    margin-left: 400px;
+}
+
+#bottomMenu ul li{
+    padding: 5px 20px;
+    /* float: left; */
+    /* border-right: 2px solid darkgray; */ /*바 사이즈 높이를 줄이고 싶음*/
+}
+/* 
+#bottomMenu ul li:last-child{
+    border-right: none;
+} */
+
+#bottomMenu ul li a, #bottomMenu ul li a:visited{
+    text-decoration-line: none;
+    font-size: 14px;
+    color: black;
+}
+
+#bottomMenu {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    right: 740px;
+}
+
+#sns {
+    position: relative;
+    bottom: 120px;
+    left: 450px;
+}
+
+#sns ul li {
+    border: none;
+    padding: 10px;
+}
+
+#company {
+    position: relative;
+    top: 10px;
+    left: 80px;
+}
+
+#footertag{
+    font-size: 14px;
+    color: black;
+    line-height: 10px;
+}
+
+footer li {
+    display: inline;
+}
+
+

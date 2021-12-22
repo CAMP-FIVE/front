@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>상품비교</title>
+<link rel="stylesheet" href="./favorite.css?after">
+<style type="text/css">
+	body{
+		line-height:2.5em;		
+	}
+	ul, li{ 
+	list-style:none;
+	text-align:center;
+	padding:0;
+	margin:0;
+    }
+</style>
+
+</head>
+<body>
+	<header>
+		<a href="./main.html"><img src="./image/logo.png" alt=""></a>
+	</header>
+	
+	<div id="mainWrapper">
+	<nav>
+		<ul id="navi">
+			<li>
+				<a href="">캠핑관련정보</a>
+				<ul>
+					<li><a href="">캠핑소식</a></li>
+					<li><a href="">캠핑안전수칙</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">캠핑장조회</a>
+				<ul>
+					<li><a href="">캠핑장검색</a></li>
+					<li><a href="">사업자 캠핑장 정보변경</a></li>
+				</ul>
+			</li>
+
+			<li>
+				<a href="">커뮤니티</a>
+				<ul>
+					<li><a href="">캠핑후기</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">마이페이지</a>
+				<ul>
+					<li><a href="">회원정보변경</a></li>
+					<li><a href="">찜한목록보기</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">고객센터</a>
+				<ul>
+					<li><a href="">공지사항</a></li>
+					<li><a href="">Q&A</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<hr>
+
+			<!-- 게시판 제목 -->
+			<h1 align="left" style="text-shadow: 3px 3px 5px #39796b; color: #004d40;"><i>상품비교</i></h1>
+			
+
+			<!-- 게시물이 출력될 영역 -->
+            <div class="chbox">
+            <input type="checkbox" name="all" id="" onclick="check();"><b>전체선택</b>
+            <input type="checkbox" name="chk" id="">위치
+            <input type="checkbox" name="chk" id="">가격
+            <input type="checkbox" name="chk" id="">반려동물
+            <input type="checkbox" name="chk" id="">온수
+            <input type="checkbox" name="chk" id="">주변시설
+            </div>
+
+            <br>
+            <div id="optionbtn" align="center">
+			<a href=""><img src="./image/arrows-circle.png" width="30px" title="선택초기화"></a>
+            <a href=""><img src="./image/printing.png" width="30px" title="인쇄"></a>
+            <a href=""><img src="./image/share.png" width="30px" title="공유"></a>
+            </div>
+
+            
+            <table id="tb" align="center">
+                <tr>
+                    <th style="color: #006064;">캠핑장명</th>
+                    <td>천안OK캠핑장</td>
+                    <td>천안밤나무골캠핑장</td>
+                    <td>솔향강릉오토캠핑장</td>
+                </tr>
+                <tr>
+                    <th style="color: #006064;">위치</th>
+                    <td>충청남도 천안시</td>
+                    <td>충청남도 천안시</td>
+                    <td>강원도 강릉시</td>
+                </tr>
+                <tr>
+                    <th style="color: #006064;">가격</th>
+                    <td>100,000</td>
+                    <td>150,000</td>
+                    <td>200,000</td>
+                </tr>
+                <tr>
+                    <th style="color: #006064;">반려동물</th>
+                    <td>불가능</td>
+                    <td>가능</td>
+                    <td>가능</td>
+                </tr>
+                <tr>
+                    <th style="color: #006064;">온수</th>
+                    <td>가능</td>
+                    <td>불가능</td>
+                    <td>가능</td>
+                </tr>
+                <tr>
+                    <th style="color: #006064;">주변시설</th>
+                    <td>산책로</td>
+                    <td>계곡</td>
+                    <td>안목해변, 카페거리</td>
+                </tr>
+            </table>
+            
+            <br>
+            <div align="center"><a href=""><img src="./image/cancel.png" width="30px"></a></div>
+</div>
+
+	<!-- footer 영역 -->
+    <footer>
+        <div id="bottomMenu">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">캠핑장등록안내</a></li>
+            </ul>
+
+        </div> 
+        <div id="company">
+            <p id="footertag">서울특별시 강남구 테헤란로 14길 6, 남도빌딩 2F~6F KH정보교육원</p>
+            <p id="footertag">TEL : 02-2345-6666 / FAX : 02-2224-5555</p>
+            <p id="footertag">EMAIL : <a href="">webmaster@iei.or.kr</a></p>
+            <p id="footertag">Copyrights(c) 2021 KOREA TOURISM ORGANIZATION ALL RIGHTS RESERVED.</p>
+        </div>
+
+		<div id="sns">
+			<ul>
+				<li><a href="#"><img src="./image/facebook.png" width="30px" height="30px"></a></li>
+				<li><a href="#"><img src="./image/instagram.png" width="30px" height="30px"></a></li>
+				<li><a href="#"><img src="./image/twitter.png" width="30px" height="30px"></a></li>
+				<li><a href="#"><img src="./image/youtube.png" width="30px" height="30px"></a></li>
+			</ul>
+		</div>
+    </footer>
+
+    <!-- 하단의 TOP버튼 -->
+	<button class="scroll-top" id="js-button">
+		<i class="fa fa-chevron-up" aria-hidden="true">TOP</i>
+	</button>
+
+	<script type="text/javascript">
+		scrollTop('js-button', 100); // 화면이 위로 올라가는 시간 0.1초
+		function scrollTop(elem,duration) {
+			let target = document.getElementById(elem);
+
+		target.addEventListener('click', function() {
+			let currentY = window.pageYOffset; 
+			let step = duration/currentY > 1 ? 10 : 100; // 한번에 움직이는 스크롤양
+			let timeStep = duration/currentY * step;
+			let intervalID = setInterval(scrollUp, timeStep);
+
+		function scrollUp(){
+			currentY = window.pageYOffset;
+			if(currentY === 0) {
+				clearInterval(intervalID);
+			} else {
+				scrollBy( 0, -step );
+			}
+		}
+	});
+}
+
+// 전체선택 클릭 시 체크박스 전체선택(어디가 틀린지 모르겠으니까 확인해보기)
+// function check(){
+//         cbox = chbox.chk;
+//         if(cbox.length) {  // 여러 개일 경우
+//             for(var i = 0; i<cbox.length;i++) {
+//                 cbox[i].checked=chbox.all.checked;
+//             }
+//         } else { // 한 개일 경우
+//             cbox.checked=chbox.all.checked;
+//         }
+//     }
+
+	</script>
+
+</body>
+</html>
+

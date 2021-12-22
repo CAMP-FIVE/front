@@ -1,0 +1,235 @@
+#mainWrapper, #mainArea{ /* 네비, 메인 영역웹크기*/
+    width: 1200px;
+    margin: 0 auto; /*가운데 정렬*/
+}
+
+/* #mainWrapper > ul > li:first-child {
+    text-align: center;
+    font-size:14pt;
+    height:40px;
+    vertical-align:middle;
+    line-height:30px;
+} */
+
+/* 메인 로고 */
+header {
+    text-align: center;
+}
+
+/* 상단 NAVI 영역 */
+nav {
+    float: right;
+    width: 100%;
+    height: 150px;
+}
+
+#navi {
+    list-style-type: none;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+#navi>li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 40px;
+}
+
+#navi a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 600;
+    height: 100%;
+    display: block;
+    line-height: 35px;
+}
+
+#navi a:hover {
+    color: darkseagreen;
+}
+
+#navi>li>ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+#navi>li>a:hover+ul {
+    display: block;
+}
+
+#navi>li>ul:hover {
+    display: block;
+}
+
+#navi>li>ul a {
+    font-size: 1.2em;
+}
+
+
+/* 중앙 메인 영역 */
+.btn_salesInfo { /*사업자 정보 변경 시 버튼*/
+    margin: auto;
+    margin-left: 1000px;
+    margin-top: 30px;
+    height: 40px;
+    background-color: rgb(178, 100, 241);
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px rgb(185, 184, 184);
+}
+
+.btn_detail_search { /*상세검색+버튼*/
+    margin: auto;
+    margin-left: 825px;
+    margin-top: 30px;
+    width: 90px;
+    height: 40px;
+    background-color: rgb(68, 66, 66);
+    font-weight: bold;
+    color: white;
+    border-style: none;
+    /* border-radius: 10px; */
+    cursor: pointer;
+}
+
+.search_box_form { /*메인중간검색창*/
+    margin: auto;
+    font-size: 20px;
+    text-align: left;
+    padding: 40px;
+    display: block;
+    width: 550px;
+    height: 220px;
+    background-color: rgba(9, 153, 134, 0.5);
+    /* border-radius: 30px; */
+}
+
+.tt { 
+    text-align: left;
+    color: white;
+}
+
+#searchKrwd_f, #c_do, #c_signgu, #searchLctCl { 
+    width: 200px;
+    height: 30px;
+    border-style: none;
+}
+
+.btnSearch { /*검색 버튼 서식*/
+    margin: auto;
+    margin-left: 220px;
+    margin-top: 30px;
+    width: 90px;
+    height: 40px;
+    background-color: rgb(68, 66, 66);
+    font-weight: bold;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#search_table {
+    margin: auto;
+    border-style: none;
+    width: 100%;
+    border-top: 1px solid darkgray;
+    border-collapse: collapse;
+}
+
+tr td {
+    border-bottom: 1px solid darkgray;
+    padding: 10px;
+}
+
+
+/* 하단 FOOTER 영역 */
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 170px;
+    background-color: darkseagreen;
+    border-top: 2px solid #222;
+    margin: 0 auto; /*가운데 정렬*/
+}
+
+#bottomMenu{
+    clear: left;
+    margin-top: 15px;
+    margin-left: 400px;
+}
+
+#bottomMenu ul li{
+    padding: 5px 20px;
+    /* float: left; */
+    /* border-right: 2px solid darkgray; */ /*바 사이즈 높이를 줄이고 싶음*/
+}
+
+#bottomMenu ul li a, #bottomMenu ul li a:visited{
+    text-decoration-line: none;
+    font-size: 14px;
+    color: black;
+}
+
+#bottomMenu {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    right: 740px;
+}
+
+#sns {
+    position: relative;
+    bottom: 120px;
+    left: 450px;
+}
+
+#sns ul li {
+    border: none;
+    padding: 10px;
+}
+
+#company {
+    position: relative;
+    top: 10px;
+    left: 80px;
+}
+
+#footertag{
+    font-size: 14px;
+    color: black;
+    line-height: 10px;
+}
+
+footer li {
+    display: inline;
+}
+
+/* 하단 TOP 버튼 */
+.scroll-top {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 100;
+	background-color: rgb(55, 160, 41);
+	opacity: .8;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: none;
+	color: #fff;
+    font-weight: bold;
+}
+.scroll-top:hover {
+	cursor: pointer;
+}
+
+
+

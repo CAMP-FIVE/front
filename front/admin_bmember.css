@@ -1,0 +1,280 @@
+#mainWrapper{
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto; /*가운데 정렬*/
+}
+
+#mainWrapper > ul > li:first-child {
+    text-align: center;
+    font-size:14pt;
+    height:40px;
+    vertical-align:middle;
+    line-height:30px;
+}
+
+header {
+    text-align: center;
+}
+
+/* 상단 NAVI 영역 */
+nav {
+    float: right;
+    width: 100%;
+    height: 150px;
+    /* background-color: darkseagreen; */
+}
+
+#navi {
+    list-style-type: none;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+#navi>li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 40px;
+}
+
+#navi a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 600;
+    height: 100%;
+    display: block;
+    line-height: 35px;
+}
+
+#navi a:hover {
+    color: darkseagreen;
+}
+
+#navi>li>ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+#navi>li>a:hover+ul {
+    display: block;
+}
+
+#navi>li>ul:hover {
+    display: block;
+}
+
+#navi>li>ul a {
+    font-size: 1.2em;
+}
+
+/* 사이드메뉴 */
+#sidebar {
+    list-style: none;
+    /* background-color: rgb(205, 229, 182); */
+    float: left;
+    width: 200px;
+    height: 650px;
+}
+
+/* 사이드 메뉴 영역 */
+#sidebar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul#sidemenu {
+    width: 200px;
+    text-indent: 10px;
+}
+ul#sidemenu, ul#sidemenu ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+li.group {
+    margin-bottom: 3px;
+}
+li.group div.title {
+    height: 35px;
+    line-height: 35px;
+    background:#04a877;
+    cursor:pointer;
+}
+ul.sub li {
+    margin-bottom: 2px;
+    height:35px;
+    line-height:35px;
+    /* background:#f4f4f4; */
+    cursor:pointer;
+}
+ul.sub li a {
+    display: block;
+    width: 100%;
+    height:100%;
+    text-decoration:none;
+    color:#000;
+}
+ul.sub li:hover {
+    background:rgb(5, 221, 149);
+}
+
+/* 버튼 속성 변경 */
+#btn {
+    width: 950px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btn1, #btn2 {
+    border: 1px solid white;
+    background-color: darkseagreen;
+    color: darkslategray;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70px;
+    height: 40px;
+    font-weight: bold;
+}
+
+#btn1:hover #btn2:hover {
+    color: darkslategray;
+    background-color: lightseagreen;
+}
+
+/* 메인 가운데 페이지 영역 */
+#tb {
+    font-size: 12px;
+    width: 900px;
+    border: none solid;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    /* top: 100px; */
+    margin: auto;
+    border-collapse: collapse;
+    border-top: 1px solid #bcbcbc; 
+    border-bottom: 1px solid #bcbcbc;
+}
+
+#tb th, td {
+    border-bottom: 1px solid #bcbcbc;
+}
+
+/* 하단 paging 영역 */
+#paging {
+	list-style:none;
+    display: flex;
+    justify-content: center;
+}
+#paging li {
+    float:left;
+}
+
+#paging li a {
+	float:left;
+	padding:4px;
+    margin: auto;
+	width:15px;
+	color:#000;
+	font:bold 12px tahoma;
+	border:1px solid #eee;
+	text-align:center;
+	text-decoration:none;
+}
+#paging li a:hover, #paging li a:focus {
+	color:#fff;
+	background-color:rgb(179, 245, 177);
+}
+
+
+
+/* 하단 FOOTER 영역 */
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 170px;
+    background-color: darkseagreen;
+    border-top: 2px solid #222;
+    margin: 0 auto; /*가운데 정렬*/
+}
+
+#bottomMenu{
+    clear: left;
+    margin-top: 15px;
+    margin-left: 400px;
+}
+
+#bottomMenu ul li{
+    padding: 5px 20px;
+    /* float: left; */
+    /* border-right: 2px solid darkgray; */ /*바 사이즈 높이를 줄이고 싶음*/
+}
+/* 
+#bottomMenu ul li:last-child{
+    border-right: none;
+} */
+
+#bottomMenu ul li a, #bottomMenu ul li a:visited{
+    text-decoration-line: none;
+    font-size: 14px;
+    color: black;
+}
+
+#bottomMenu {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    right: 740px;
+}
+
+#sns {
+    position: relative;
+    bottom: 120px;
+    left: 450px;
+}
+
+#sns ul li {
+    border: none;
+    padding: 10px;
+}
+
+#company {
+    position: relative;
+    top: 10px;
+    left: 80px;
+}
+
+#footertag{
+    font-size: 14px;
+    color: black;
+    line-height: 10px;
+}
+
+footer li {
+    display: inline;
+}
+
+/* 하단 TOP 버튼 */
+.scroll-top {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 100;
+	background-color: rgb(55, 160, 41);
+	opacity: .8;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: none;
+	color: #fff;
+    font-weight: bold;
+}
+.scroll-top:hover {
+	cursor: pointer;
+}
+
+
