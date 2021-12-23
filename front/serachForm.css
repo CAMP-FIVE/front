@@ -1,0 +1,16 @@
+/* #liSearchOption {clear:both;}
+
+
+#liSearchOption > div {
+    margin:0 auto; 
+    margin-top: 30px; 
+    width:auto; 
+    height:100px; 
+    /* transform: scale(1.2); */ /*검색창사이즈*/
+
+
+#liSearchOption {
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+}
