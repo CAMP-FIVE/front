@@ -64,10 +64,10 @@ body {
 	</section>
 
 	<!-- 검색 폼 영역 -->
-	<jsp:include page="/views/common/searchForm.jsp" />
+	<jsp:include page="/views/board/searchForm.jsp" />
 
 	<!-- 게시판 페이징 영역 -->
-	<jsp:include page="/views/common/pageBar.jsp" />
+	<jsp:include page="/views/board/pageBar.jsp" />
 
 	<!-- footer 영역 -->
 	<jsp:include page="/views/common/footer.jsp" />
