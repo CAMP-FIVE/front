@@ -43,7 +43,7 @@
                 <ul id="navi">
                     <li><a href="">캠핑관련정보</a>
                         <ul>
-                            <li><a href="">캠핑 소식</a></li>
+                            <li><a href="${pageContext.request.contextPath}/views/board/news.jsp">캠핑 소식</a></li>
                             <li><a href="">캠핑 안전수칙</a></li>
                         </ul>
                     </li>
@@ -56,7 +56,7 @@
                     <li>
                         <a href="">커뮤니티</a>
                         <ul>
-                            <li><a href="">캠핑후기</a></li>
+                            <li><a href="${pageContext.request.contextPath}/views/board/boradList.jsp">캠핑후기</a></li>
                         </ul>
                     </li>
                     <li>
