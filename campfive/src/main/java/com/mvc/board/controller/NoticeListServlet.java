@@ -41,7 +41,7 @@ public class NoticeListServlet extends HttpServlet {
 		
 		request.setAttribute("pageInfo", pageInfo);
 		request.setAttribute("list", list);
-		request.getRequestDispatcher("/views/common/notice.jsp").forward(request, response);
+		request.getRequestDispatcher("/views/board/notice.jsp").forward(request, response);
 	}
 
 }

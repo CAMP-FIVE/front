@@ -41,7 +41,7 @@ public class QnaListServlet extends HttpServlet {
 		
 		request.setAttribute("pageInfo", pageInfo);
 		request.setAttribute("list", list);
-		request.getRequestDispatcher("/views/common/qna.jsp").forward(request, response);
+		request.getRequestDispatcher("/views/board/qna.jsp").forward(request, response);
 	}
 
 }
