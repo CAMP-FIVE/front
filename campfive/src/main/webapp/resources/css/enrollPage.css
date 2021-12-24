@@ -1,0 +1,25 @@
+.wrap {
+    margin-top: 50px;
+}
+
+#user, #business {
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+
+#user button, #business button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#user img, #business img {
+    margin-top: 50px;
+}
+
+#user, #business {
+    /* border: 1px solid gray; */
+    background-color: #a7c7a7;
+}

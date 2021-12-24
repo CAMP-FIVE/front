@@ -1,0 +1,10 @@
+div#updatePassword-container{
+	background: darkseagreen;
+}
+div#updatePassword-container table {
+	margin:0 auto;
+	border-spacing: 20px;
+}
+div#updatePassword-container table tr:last-of-type td {
+	text-align:center;
+}

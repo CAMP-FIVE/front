@@ -1,0 +1,48 @@
+section #view-container {
+    text-align:center;
+}
+
+section #view-container input {
+    margin:3px;
+}
+
+section #view-container table {
+    margin:0 auto;
+}
+
+section #view-container table th {
+    padding:0 10px; 
+    text-align:right;
+}
+
+section #view-container table td {
+    padding:0 10px; 
+    text-align:left;
+}
+
+#myPageTitle {
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 30px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.wrap {
+    width: 100%;
+    height: 600px;
+}
+
+#myPageTable th {
+    color: black;
+    font-size: medium;
+}
+
+#myPageTable td input {
+    background-color: darkseagreen;
+}
+
+#btn1 {
+    margin: 10px;
+    text-align: center;
+}

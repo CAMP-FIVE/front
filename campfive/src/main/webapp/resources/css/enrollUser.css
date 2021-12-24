@@ -1,0 +1,70 @@
+section #enroll-container {
+    text-align: center;
+}
+
+section #enroll-container input {
+    margin:3px;
+}
+
+section #enroll-container table {
+    margin:0 auto;
+}
+
+section #enroll-container table th {
+    padding:0 10px; 
+    text-align:right;
+}
+
+section #enroll-container table td {
+    padding:0 10px; 
+    text-align:left;
+}
+
+#enrollTitle {
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 30px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.wrap {
+    padding: 10px;
+    width: 100%;
+    height: 600px;
+}
+
+#enrollUserTbl th {
+    color: black;
+    font-size: medium;
+}
+
+#enrollUserTbl td input:first-child {
+    background-color: darkseagreen;
+}
+
+#btn1 {
+    margin: 10px;
+    text-align: center;
+}
+
+#userAgree {
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    overflow: scroll;
+}
+
+#enrollAgree {
+    width: 800px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#enrollAgree input {
+    margin-right: 10px;
+}
