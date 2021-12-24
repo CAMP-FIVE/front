@@ -26,21 +26,21 @@
     			<th>등록일</th>
     			<th>조회수</th>
     		</tr>
-			<c:forEach var="posting" items="${list }">
+			<c:forEach var="qna" items="${ list }">
 				<tr>
-					<td>${posting.num }</td>
-					<td>${posting.title }</td>
-					<td>${posting.name }</td>
-					<td>${posting.writeDate }</td>
-					<td>${posting.readCount }</td>
+					<td>${ qna.no }</td>
+					<td>${ qna.title }</td>
+					<td>${ qna.id }</td>
+					<td>${ qna.create_date }</td>
+					<td>${ qna.hit }</td>
 				</tr>
 			</c:forEach>
     	</table>
     </section>
     	
-  <jsp:include page="/views/board/searchForm.jsp"/>    
+  <jsp:include page="/views/common/searchForm.jsp"/>    
   <br>  
-  <jsp:include page="/views/board/pageBar.jsp"/> 
+  <jsp:include page="/views/common/pageBar.jsp"/> 
   <br>   
   <jsp:include page="/views/common/footer.jsp"/>    
 </body>

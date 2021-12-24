@@ -56,7 +56,7 @@
                     <li>
                         <a href="">커뮤니티</a>
                         <ul>
-                            <li><a href="${pageContext.request.contextPath}/views/board/boradList.jsp">캠핑후기</a></li>
+                            <li><a href="${ path }/board/review">캠핑후기</a></li>
                         </ul>
                     </li>
                     <li>
@@ -69,8 +69,8 @@
                     <li>
                         <a href="">고객센터</a>
                         <ul>
-                            <li><a href="${pageContext.request.contextPath}/views/board/notice.jsp">공지사항</a></li>
-                            <li><a href="${pageContext.request.contextPath}/views/board/qna.jsp">Q&A</a></li>
+                            <li><a href="${ path }/board/notice">공지사항</a></li>
+                            <li><a href="${ path }/board/qna">Q&A</a></li>
                         </ul>
                     </li>
                 </ul>
