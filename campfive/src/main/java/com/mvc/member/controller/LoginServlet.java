@@ -20,11 +20,23 @@ public class LoginServlet extends HttpServlet {
 	private MemberService service = new MemberService();
 
     public LoginServlet() {
- 
-
     }
-
     
+    @Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    	HttpSession session = request.getSession(false); 
+    	Member loginMember = session != null ? (Member) session.getAttribute("loginMember") : null;
+    	
+    	if(loginMember == null) {    		
+    		request.getRequestDispatcher("/views/member/loginform.jsp").forward(request, response);    		
+    	} else {
+    		request.setAttribute("msg", "로그아웃 후 이용해 주세요.");
+			request.setAttribute("location", "/");
+			
+			request.getRequestDispatcher("/views/common/msg.jsp").forward(request, response);
+    	}
+	}
+
     @Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = null;
