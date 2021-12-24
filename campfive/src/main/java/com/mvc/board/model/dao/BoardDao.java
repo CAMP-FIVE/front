@@ -8,9 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.mvc.board.model.vo.Board;
+import static com.mvc.common.jdbc.JDBCTemplate.*;
 import com.mvc.common.util.PageInfo;
-
-import static com.mvc.common.jdbc.JDBCTemplate.JDBCTemplate.*;
 
 public class BoardDao {
 

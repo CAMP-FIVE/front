@@ -1,7 +1,6 @@
 package com.mvc.board.model.service;
 
-import static com.mvc.common.jdbc.JDBCTemplate.JDBCTemplate.close;
-import static com.mvc.common.jdbc.JDBCTemplate.JDBCTemplate.getConnection;
+import static com.mvc.common.jdbc.JDBCTemplate.*;
 
 import java.sql.Connection;
 import java.util.List;
