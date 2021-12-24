@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<c:set var="path" value="${ pageContext.request.contextPath }"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,14 +22,8 @@
                 <label for="expand-menu"><div>메뉴</div></label>
                 <input type="checkbox" id="expand-menu" name="expand-menu" class="inp">
                 <ul>
-                    <c:if test="${ empty loginMember }">
-		                <li><a href="${pageContext.request.contextPath}/views/common/loginform.jsp" class="item"><div>로그인</div></a></li>
-    		            <li><a href="${pageContext.request.contextPath}/views/member/enrollPage.jsp" class="item"><div>회원가입</div></a></li>
-                	</c:if>
-                	<c:if test="${ !empty loginMember }">
-		                <li><a href="${pageContext.request.contextPath}/login" class="item"><div>로그인</div></a></li>
-    		            <li><a href="${pageContext.request.contextPath}/member/enrollUser" class="item"><div>회원가입</div></a></li>
-                	</c:if>
+                    <li><a href="${pageContext.request.contextPath}/views/common/loginform.jsp" class="item"><div>로그인</div></a></li>
+                    <li><a href="#" class="item"><div>회원가입</div></a></li>
                     <li><a href="#" class="item"><div>찜한목록</div></a></li>
 					<li><a href="${ path }/logout" class="item"><div>로그아웃</div></a></li>
                 </ul>
@@ -62,7 +54,7 @@
                     <li>
                         <a href="">마이페이지</a>
                         <ul>
-                            <li><a href="${pageContext.request.contextPath}/member/myPage">회원정보 변경</a></li>
+                            <li><a href="">회원정보 변경</a></li>
                             <li><a href="">찜한목록 보기</a></li>
                         </ul>
                     </li>
