@@ -10,7 +10,7 @@ import java.util.List;
 import com.mvc.board.model.vo.Board;
 import com.mvc.common.util.PageInfo;
 
-import static com.mvc.common.jdbc.JDBCTemplate.JDBCTemplate.*;
+import static com.mvc.common.jdbc.JDBCTemplate.*;
 
 public class QnaDao {
 

@@ -38,9 +38,9 @@
     	</table>
     </section>
     
-  <jsp:include page="/views/common/searchForm.jsp"/>    
+  <jsp:include page="/views/board/searchForm.jsp"/>    
   <br>  
-  <jsp:include page="/views/common/pageBar.jsp"/> 
+  <jsp:include page="/views/board/pageBar.jsp"/> 
   <br>   
   <jsp:include page="/views/common/footer.jsp"/>
      

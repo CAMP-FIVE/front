@@ -41,7 +41,7 @@ public class ReviewListServlet extends HttpServlet {
 		
 		request.setAttribute("pageInfo", pageInfo);
 		request.setAttribute("list", list);
-		request.getRequestDispatcher("/views/common/camping_review.jsp").forward(request, response);
+		request.getRequestDispatcher("/views/board/camping_review.jsp").forward(request, response);
 	}
 
 }

@@ -7,7 +7,7 @@ import com.mvc.board.model.dao.BoardDao;
 import com.mvc.board.model.vo.Board;
 import com.mvc.common.util.PageInfo;
 
-import static com.mvc.common.jdbc.JDBCTemplate.JDBCTemplate.*;
+import static com.mvc.common.jdbc.JDBCTemplate.*;
 
 public class BoardService {
 

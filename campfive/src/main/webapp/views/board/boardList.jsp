@@ -48,7 +48,7 @@
 				</c:forEach>
 			</c:if>
 		</table>
-		<jsp:include page="/views/common/pageBar.jsp" />
+		<jsp:include page="/views/board/pageBar.jsp" />
 	</section>
 	<jsp:include page="/views/common/footer.jsp" />
 </body>
