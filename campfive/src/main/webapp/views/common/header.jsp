@@ -69,8 +69,8 @@
                     <li>
                         <a href="">고객센터</a>
                         <ul>
-                            <li><a href="">공지사항</a></li>
-                            <li><a href="${pageContext.request.contextPath}/views/common/qna.jsp">Q&A</a></li>
+                            <li><a href="${pageContext.request.contextPath}/views/board/notice.jsp">공지사항</a></li>
+                            <li><a href="${pageContext.request.contextPath}/views/board/qna.jsp">Q&A</a></li>
                         </ul>
                     </li>
                 </ul>
