@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+
+/* header 영역 css */
+#text1{
+    font-size: 1em;
+    color: black;
+}
+form{
+    float: right;
+    margin-top: 95px;
+    margin-right: 50px;
+}
+fieldset {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 40px;
+    background: green;
+    border: none;
+    border-radius: 5px;
+}
+
+.inp, .btn1 {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    float: left;
+}
+
+.inp {
+    color: #666;
+    z-index: 2;
+    border: 0 none;
+}
+.inp:focus {
+    outline: 0 none;
+}
+.inp:focus + .btn1 {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+}
+.inp:focus + .btn1 .fa {
+    -webkit-transform: translate(0px, 0);
+        -ms-transform: translate(0px, 0);
+            transform: translate(0px, 0);
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    color: #fff;
+}
+
+.btn1 {
+    z-index: 1;
+    width: 50px;
+    border: 0 none;
+    background: beige;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;  
+    -webkit-transform: translate(-50px, 0);
+        -ms-transform: translate(-50px, 0);
+            transform: translate(-50px, 0);
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+}
+
+.fa-search {
+    font-size: 1.4rem;
+    color: #29abe2;
+    z-index: 3;
+    top: 25%;
+    -webkit-transform: translate(-190px, 0);
+        -ms-transform: translate(-190px, 0);
+            transform: translate(-190px, 0);
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    -webkit-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+}
+
+nav{
+    /* border: 1px solid; */
+    width: 1000px;
+    height: 40px;
+}
+
+#navi {
+    /* border: 1px solid; */
+    list-style-type: none;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+#navi>li{
+    float: left;
+    width: 19%;
+    text-align: center;
+    height: 100%;
+}
+#navi a{
+    text-decoration: none;
+    color: green;
+    font-size: 1.5em;
+    font-weight: 900;
+    height: 100%;
+    display: block;
+    line-height: 40px;
+}
+#navi a:hover{
+    color: beige;
+}
+#navi>li>ul{
+    list-style: none;
+    padding: 0%;
+    display: none;
+}
+#navi>li>a:hover+ul{
+    display: block;
+    position: flex;
+}
+#navi>li>ul:hover{
+    display: block;
+}
+#navi>li>ul a{
+    font-size: 1.2em;
+}
+#fixed_menu {
+    width: 1430px;
+    background-color: white;
+    position: sticky;
+    top: 0%;
+    opacity: 0.8;
+    backdrop-filter: blur(20px);
+
+}
+
+/* mainselect_box css 영역 */
+
+.inp1 {
+    width: 300px;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid mediumseagreen;
+}
+#addressRegion2 {
+    width: 100px;
+    height: 25px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+#addressDo2{
+    width: 100px;
+    height: 25px;
+    border-radius: 4px;
+}
+#addressSiGunGu2{
+    width: 100px;
+    height: 25px;
+    border-radius: 4px;
+
+}
+#select_box{
+    width: 650px;
+    height: 270px;
+    margin-top: 200px;
+    margin-left: 400px;
+    margin-bottom: 100px;
+    border-radius : 15px;
+}
+#select_contents{
+    margin-left: 100px;
+    margin-top: 45px;
+}
+
+#themainput{
+    margin: left 10px;
+    margin-left: 40px;
+    
+}
+
+#btn{
+    width: 100px;
+    border-radius: 4px;
+    border: 1px solid mediumseagreen;
+    background-color: rgba(0,0,0,0);
+    color: mediumseagreen;
+    padding: 8px;
+    margin-left: 10px;
+}
+#btn:hover{
+    color: white;
+    background-color: mediumseagreen;
+}
+
+#set1{
+    align-items: center;
+	box-sizing: border-box;
+	color: #666;
+	cursor: default;
+	display: flex;
+	font-family: sans-serif;
+	height: 100%;
+	justify-content: center;
+	margin: 0;
+	width: 100%;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.ptag1 {
+    float: left;
+    margin-bottom: 40px;
+
+}
