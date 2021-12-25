@@ -29,7 +29,11 @@
 			<c:forEach var="qna" items="${ list }">
 				<tr>
 					<td>${ qna.no }</td>
-					<td>${ qna.title }</td>
+					<td>
+						<a href="${ pageContext.request.contextPath }/board/qnaview?no=${ qna.no }">
+								${ qna.title }
+						</a>
+					</td>
 					<td>${ qna.id }</td>
 					<td>${ qna.create_date }</td>
 					<td>${ qna.hit }</td>

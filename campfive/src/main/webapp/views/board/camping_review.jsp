@@ -52,7 +52,11 @@ body {
 				<c:forEach var="review" items="${ list }">
 					<tr>
 						<td>${ review.no }</td>
-						<td>${ review.title }</td>
+						<td>
+							<a href="${ pageContext.request.contextPath }/board/reviewview?no=${ review.no }">
+								${ review.title }
+							</a>
+						</td>
 						<td>${ review.id }</td>
 						<td>${ review.create_date }</td>
 						<td>${ review.hit }</td>

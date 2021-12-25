@@ -29,7 +29,11 @@
 			<c:forEach var="notice" items="${ list }">
 				<tr>
 					<td>${ notice.no }</td>
-					<td>${ notice.title }</td>
+					<td>
+						<a href="${ pageContext.request.contextPath }/board/noticeview?no=${ notice.no }">
+								${ notice.title }
+						</a>
+					</td>
 					<td>${ notice.id }</td>
 					<td>${ notice.create_date }</td>
 					<td>${ notice.hit }</td>
