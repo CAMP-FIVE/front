@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+#div1 {
+    width: 800px;
+	margin:auto;
+}
+
+
+#tb {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    line-height: 20px;
+}
+
+#tb td,th {
+	border-top: 1.5px solid green;
+    border-bottom: 1.5px solid green;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
