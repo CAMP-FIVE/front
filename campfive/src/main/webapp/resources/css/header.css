@@ -169,6 +169,7 @@ nav{
     margin-top: 200px;
     margin-left: 400px;
     margin-bottom: 100px;
+    border-radius : 15px;
 }
 #select_contents{
     margin-left: 100px;
@@ -216,5 +217,6 @@ nav{
 
 .ptag1 {
     float: left;
+    margin-bottom: 40px;
 
 }

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@charset "UTF-8";
+
 /* 중간 메인 table */
 #tb {
     margin: auto;
@@ -36,6 +38,3 @@ th {
     margin-top: -50px;
     margin-bottom: 50px;
 }
-
-
-
