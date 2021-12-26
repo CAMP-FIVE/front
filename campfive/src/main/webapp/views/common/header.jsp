@@ -22,7 +22,7 @@
                 <input type="checkbox" id="expand-menu" name="expand-menu" class="inp">
                 <ul>
                     <li><a href="${pageContext.request.contextPath}/views/common/loginform.jsp" class="item"><div>로그인</div></a></li>
-                    <li><a href="#" class="item"><div>회원가입</div></a></li>
+                    <li><a href="${pageContext.request.contextPath}/views/member/enrollPage.jsp" class="item"><div>회원가입</div></a></li>
                     <li><a href="#" class="item"><div>찜한목록</div></a></li>
 					<li><a href="${ path }/logout" class="item"><div>로그아웃</div></a></li>
                 </ul>

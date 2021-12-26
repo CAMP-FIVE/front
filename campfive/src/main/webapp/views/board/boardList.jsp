@@ -31,19 +31,24 @@
 				<th>작성날짜</th>
 				<th>조회수</th>
 			</tr>
-			<c:if test="${ empty list }">
+			<c:if test="${ empty boardList }">
 				<tr>
-					<td colspan="6">조회된 게시글이 없습니다.</td>
+					<td>${ board.no }</td>
+					<td>
+						<a href="${ pageContext.request.contextPath }/board/view?no=${ board.no }">
+						 ${ board.title }					
+					</a>
+					</td>
 				</tr>
 			</c:if>
-			<c:if test="${ !empty list }">
-				<c:forEach var="notice" items="${ list }">
+			<c:if test="${ !empty boardList }">
+				<c:forEach var="notice" items="${ boardList }">
 					<tr>
-						<td>${ notice.no }</td>
-						<td>${ notice.title }</td>
-						<td>${ notice.id }</td>
-						<td>${ notice.create_date }</td>
-						<td>${ notice.hit }</td>
+						<td>${ board.no }</td>
+						<td>${ board.title }</td>
+						<td>${ board.id }</td>
+						<td>${ board.create_date }</td>
+						<td>${ board.hit }</td>
 					</tr>
 				</c:forEach>
 			</c:if>

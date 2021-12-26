@@ -162,7 +162,7 @@
     </div>
 
     <div id="enrollTitle">회원 가입</div>
-    <div class="wrap">
+    <div class="wrap2">
         <div id="enroll-container">
             <form name="memberEnrollFrm" action="${ pageContext.request.contextPath }/member/enrollBusiness" method="post">
                 <table id="enrollUserTbl">

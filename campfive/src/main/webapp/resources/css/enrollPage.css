@@ -1,4 +1,4 @@
-.wrap {
+.wrap1 {
     margin-top: 50px;
 }
 
@@ -7,7 +7,7 @@
     width: 50%;
     box-sizing: border-box;
     float: left;
-    text-align: center;
+    text-align: center; 
 }
 
 #user button, #business button {
