@@ -17,26 +17,39 @@
     
     	<h3 style="color: green;">상세조회</h3>
 
-    <hr align="left" style="border: solid 1px darkgreen; width:57%;">
+    <hr align="left" style="border: solid 1px darkgreen; width:85%;">
     <br>
     
     <table border="1px" id="tb">
+    	<c:if test="${ empty list }">
+			<tr>
+				<td style="text-align: center;">조회된 게시글이 없습니다.</td>
+			</tr>
+			</c:if>
+		<c:if test="${ !empty list }">
+		<c:forEach var="board" items="${ list }">
         <tr>
             <th>제목</th>
-            <td>123123123123</td>
-            <th>조회수</th>
-            <td>123112</td>
+            <td>${ board.title }</td>
         </tr>
         <tr>
-            <th>작성자</td>
-            <td>관리자</td>
+            <th>작성자</th>
+            <td>${ board.id }</td>
+        </tr>
+        <tr>
             <th>작성시간</th>
-            <td>2021-12-26 17:46:55</td>
+            <td>${ board.creat_date }</td>
         </tr>
         <tr>
-            <th>내용</th>
-            <td colspan="3" height="300px">내용을 입력하기</td>
+            <th>조회수</th>
+            <td>${ board.readCount }</td>
         </tr>
+        <tr>
+            <th height="300px;">내용</th>
+            <td>${ board.content }</td>
+        </tr>
+        </c:forEach>
+        </c:if>
     </table>
     </div>
     
