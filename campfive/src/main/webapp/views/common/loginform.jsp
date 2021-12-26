@@ -13,8 +13,8 @@
 	<jsp:include page="/views/common/header.jsp"/>
 	<section>
 	    <div class="loginform">
-        <h1>login</h1>
         <form action="${ path }/login" method="post">
+        <p>login</p>
             <input id="input" type="text" name="userId"  placeholder="아이디">
             <input id="input" type="password" name="userPwd" placeholder="비밀번호">
             <input id="input" type="checkbox" name="remember" id="checkbox" class="hidden">

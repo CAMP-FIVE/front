@@ -7,6 +7,7 @@ import java.util.List;
 
 import com.mvc.board.model.dao.BoardDao;
 import com.mvc.board.model.vo.Board;
+import com.mvc.board.model.vo.Board1;
 import com.mvc.common.util.PageInfo;
 
 public class BoardService {
@@ -35,7 +36,37 @@ public class BoardService {
 		
 		return list;
 	}
+	
+	
 
+	public List<Board1> getBoardList1(PageInfo pageInfo) {
+		List<Board1> list = null;
+		Connection connection = getConncetion();
+		
+		
+		list = dao.findAll1(connection, pageInfo);
+		
+		close(connection);
+		
+		
+		
+		return list;
+	}
+
+	
+	public Board1 findBoardNo(int no) {
+		
+		Board1 board = null;
+		Connection connection = getConncetion();
+		
+		board = dao.findBoardNo(connection, no);
+		
+		close(connection);
+		
+		return board;
+	}
+	
+	
 	public int save(Board board) {
 		int result = 0;
 		Connection connection = getConncetion();
