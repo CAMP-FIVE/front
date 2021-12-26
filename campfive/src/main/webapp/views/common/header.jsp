@@ -52,7 +52,7 @@
                     <li>
                         <a href="">마이페이지</a>
                         <ul>
-                            <li><a href="">회원정보 변경</a></li>
+                            <li><a href="${pageContext.request.contextPath}/views/member/myPage.jsp">회원정보 변경</a></li>
                             <li><a href="">찜한목록 보기</a></li>
                         </ul>
                     </li>

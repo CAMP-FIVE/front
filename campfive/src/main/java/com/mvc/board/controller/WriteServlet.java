@@ -14,8 +14,6 @@ import com.mvc.board.model.vo.Board;
 import com.mvc.common.util.FileRename;
 import com.mvc.member.model.vo.Member;
 import com.oreilly.servlet.MultipartRequest;
-import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
-import com.oreilly.servlet.multipart.FileRenamePolicy;
 
 @WebServlet("/board/write")
 public class WriteServlet extends HttpServlet {
