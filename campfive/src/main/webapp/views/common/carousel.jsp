@@ -14,21 +14,21 @@
 		<li class="slideitem">
 			<a>
 				<label for="slide03" class="prev"></label>
-				<img src="${pageContext.request.contextPath}/resources/img/camping2.jpeg">
+				<img src="${pageContext.request.contextPath}/resources/images/camping2.jpeg">
 				<label for="slide02" class="next"></label>
 			</a>
 		</li>
 		<li class="slideitem">
 			<a>
 				<label for="slide01" class="prev"></label>
-				<img src="${pageContext.request.contextPath}/resources/img/camping1.webp">
+				<img src="${pageContext.request.contextPath}/resources/images/camping1.webp">
 				<label for="slide03" class="next"></label>
 			</a>
 		</li>
 		<li class="slideitem">
 			<a>
 				<label for="slide02" class="prev"></label>
-				<img src="${pageContext.request.contextPath}/resources/img/camping.webp">
+				<img src="${pageContext.request.contextPath}/resources/images/camping.webp">
 				<label for="slide01" class="next"></label>
 			</a>
 		</li>
