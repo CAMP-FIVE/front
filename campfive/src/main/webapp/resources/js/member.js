@@ -109,3 +109,41 @@ function validate() {
 	}
 }
 
+	function findId() {
+		var userName = document.getElementById("userName").value;
+		var phone = document.getElementById("phone").value;
+		
+		if(userName.length < 1 || phone.length != 13) {
+			alert("아이디를 입력해주세요.");
+			return false;
+		}
+		
+		if(phone.length != 13) {
+			alert("전화번호를 입력해주세요.");
+			return false;
+		}
+		
+	}
+	
+	function findPwd() {
+		var userId = document.getElementById("userId").value;
+		var userName = document.getElementById("userName").value;
+		var phone = document.getElementById("phone").value;
+		
+		if(userId.length < 1) {
+			alert("아이디를 입력해주세요.");
+			return;
+		}
+		
+		if(userName.length < 1) {
+			alert("이름을 입력해주세요.");
+			return;
+		}
+		
+		if(phone.length != 13) {
+			alert("전화번호를 입력해주세요.");
+			return;
+		}
+		
+	}
+
