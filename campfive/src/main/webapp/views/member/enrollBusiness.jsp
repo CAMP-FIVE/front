@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/enrollBusiness.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/enrollBusiness2.css">
 <script src="${ pageContext.request.contextPath }/resources/js/jquery-3.6.0.js"></script>
 <script src="${ pageContext.request.contextPath }/resources/js/member.js"></script>
 </head>
