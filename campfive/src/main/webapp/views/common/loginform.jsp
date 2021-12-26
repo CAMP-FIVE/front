@@ -8,16 +8,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-    <link href="${pageContext.request.contextPath}/resources/css/loginform.css" rel="stylesheet">
-</head>
+  <link href="${pageContext.request.contextPath}/resources/css/loginform.css" rel="stylesheet">
 <body>
+	<jsp:include page="/views/common/header.jsp"/>
+	<section>
 	    <div class="loginform">
         <h1>login</h1>
         <form action="${ path }/login" method="post">
-            <input type="text" name="userId"  placeholder="아이디">
-            <input type="password" name="userPwd" placeholder="비밀번호">
-            <input type="checkbox" name="remember" id="checkbox" class="hidden">
-            <input type="submit" value="LOGIN">
+            <input id="input" type="text" name="userId"  placeholder="아이디">
+            <input id="input" type="password" name="userPwd" placeholder="비밀번호">
+            <input id="input" type="checkbox" name="remember" id="checkbox" class="hidden">
+            <input id="input" type="submit" value="LOGIN">
         </form>
         <div class="forgot">
             <a href="#">회원가입</a>
@@ -25,5 +26,8 @@
             <a href="#">비밀번호 찾기</a>
         </div>
     </div>
+	</section>
+ <jsp:include page="/views/common/footer.jsp"/> 
+    
 </body>
 </html>

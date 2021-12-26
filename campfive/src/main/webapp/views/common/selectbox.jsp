@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
     <link href="${pageContext.request.contextPath}/resources/css/header.css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <section id="sec1">
@@ -16,7 +17,7 @@
                 <select name="addressDo" id="addressDo2"></select>
                 <select name="addressSiGunGu" id="addressSiGunGu2"></select>
                 <p class="ptag1">테마별<input type="text" id="themainput" class="inp1"><button id="btn" herf="#">검색</button></p>
-                <script src="js/selectbox.js"></script>
+                <script src="/resources/js/selectbox.js"></script>
                 </p>
             </div>
         </div>

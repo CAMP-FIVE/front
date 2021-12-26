@@ -34,7 +34,3 @@
   <jsp:include page="/views/common/footer.jsp"/>    
 </body>
 </html>
-
-
-
-

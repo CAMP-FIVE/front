@@ -9,9 +9,6 @@
 </head>
 <body>
       <div id="wrap">
-        <section>
-
-        </section>
         <footer>
             <p>
                 <a href="#">이용약관</a>
