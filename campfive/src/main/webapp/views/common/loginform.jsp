@@ -21,9 +21,9 @@
             <input id="input" type="submit" value="LOGIN">
         </form>
         <div class="forgot">
-            <a href="#">회원가입</a>
-            <a href="#">아이디 찾기</a>
-            <a href="#">비밀번호 찾기</a>
+            <a href="${pageContext.request.contextPath}/views/member/enrollPage.jsp">회원가입</a>
+            <a href="${pageContext.request.contextPath}/views/member/findId.jsp">아이디 찾기</a>
+            <a href="${pageContext.request.contextPath}/views/member/findPwd.jsp">비밀번호 찾기</a>
         </div>
     </div>
 	</section>

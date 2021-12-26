@@ -1,25 +1,30 @@
-.wrap1 {
-    margin-top: 50px;
+@charset "UTF-8";
+
+section {
+    width:1200px;
+    margin:auto;
 }
 
-#user, #business {
-    height: 100%;
-    width: 50%;
-    box-sizing: border-box;
-    float: left;
-    text-align: center; 
+table{
+    border-spacing:15px;
+    width: 100%;
+    line-height:20px;
+    margin-top:300px;
+    margin-bottom:150px;
 }
-
-#user button, #business button {
-    margin-top: 50px;
-    margin-bottom: 50px;
+table td{
+    text-align:center;
+    padding:10px;
+    background-color:rgb(194, 224, 194); 
+    border-radius:16px;
+    box-shadow:inset 0 0 8px darkseagreen;
 }
-
-#user img, #business img {
-    margin-top: 50px;
+table tr{
+    height:400px;
 }
-
-#user, #business {
-    /* border: 1px solid gray; */
-    background-color: #a7c7a7;
+table img{
+    width:200px;
+}
+table button{
+    margin-top:50px;
 }
