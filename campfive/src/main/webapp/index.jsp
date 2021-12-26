@@ -6,6 +6,9 @@
 
  <section id="content">
  <jsp:include page="/views/common/selectbox.jsp"/>
+  <jsp:include page="/views/common/carousel.jsp"/>
  </section>
+
+
  
 <jsp:include page="/views/common/footer.jsp"/>

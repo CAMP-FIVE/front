@@ -33,5 +33,7 @@ public class Member {
 	private Date enrollDate;
 	
 	private Date modifyDate;
-}
+
+		
+	}
 

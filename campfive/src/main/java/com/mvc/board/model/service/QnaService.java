@@ -15,7 +15,7 @@ public class QnaService {
 	
 	public int getBoardCount() {
 		int count = 0;
-		Connection connection = getConnection();
+		Connection connection = getConncetion();
 		
 		count = dao.getBoardCount(connection);
 		
@@ -27,7 +27,7 @@ public class QnaService {
 
 	public List<Board> getBoardList(PageInfo pageInfo) {
 		List<Board> list = null;
-		Connection connection = getConnection();
+		Connection connection = getConncetion();
 		
 		list = dao.findAll(connection, pageInfo);
 		

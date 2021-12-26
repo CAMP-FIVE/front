@@ -24,7 +24,7 @@ public class MemberService {
 
 	public int save(Member member) {
 		int result = 0;
-		Connection connection = getConnection();
+		Connection connection = getConncetion();
 		
 		if(member.getNo() != 0) {
 			result = dao.updateMember(connection, member);
@@ -45,7 +45,7 @@ public class MemberService {
 
 	public int updatePassword(int no, String password, String newPassword) {
 		int result = 0;
-		Connection connection = getConnection();
+		Connection connection = getConncetion();
 		
 		result = dao.updateMemberPassword(connection, no, password, newPassword);
 		
@@ -62,7 +62,7 @@ public class MemberService {
 	
 	public int delete(int no) {
 		int result = 0;
-		Connection connection = getConnection();
+		Connection connection = getConncetion();
 		
 		result = dao.updateMemberStatus(connection, no, "N");
 		
@@ -83,7 +83,7 @@ public class MemberService {
 	}
 	
 	public Member findMemberById(String id) {
-		Connection connection = getConnection();
+		Connection connection = getConncetion();
 		Member member = dao.findMemberById(connection, id);
 	
 		close(connection);

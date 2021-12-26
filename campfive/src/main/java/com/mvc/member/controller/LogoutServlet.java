@@ -27,30 +27,7 @@ public class LogoutServlet extends HttpServlet {
     	
     	response.sendRedirect(request.getContextPath() + "/");
     	
-    	System.out.println("logout_OK"); // 로그아웃 ok 화면 띄우기
+		request.setAttribute("msg","로그아웃 완료.");
+		request.setAttribute("location", "/");
 	}
 }
-       
-//    public LogoutServlet() {
-//  
-//    }
-//    
-//	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//	
-//		System.out.println("get");
-//		HttpSession session = request.getSession();
-//		if(session.getAttribute("id") != null) {
-//			session.removeAttribute("id");			
-//		}
-//		if(session.getAttribute("name") != null) {
-//		session.removeAttribute("name");
-//		}
-//		//session.invalidate(); //모든 세션 종료
-//		response.sendRedirect("./index.jsp");
-//	}
-// 
-//	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		System.out.println("post");
-//	}
-//
-//}

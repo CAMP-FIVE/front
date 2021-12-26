@@ -31,20 +31,3 @@ public class EncryptFilter implements Filter {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -31,4 +31,8 @@ public class Board {
 	private int hit;
 	
 	private String status;
+	
+	private String originalFileName;
+	
+	private String renamedFileName;
 }

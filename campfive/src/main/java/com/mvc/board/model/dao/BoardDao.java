@@ -1,5 +1,7 @@
 package com.mvc.board.model.dao;
 
+import static com.mvc.common.jdbc.JDBCTemplate.*;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -8,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.mvc.board.model.vo.Board;
-import static com.mvc.common.jdbc.JDBCTemplate.*;
 import com.mvc.common.util.PageInfo;
 
 public class BoardDao {
@@ -88,9 +89,30 @@ public class BoardDao {
 			close(pstmt);
 		}
 		
-		
-		
 		return list;
+	}
+
+	public int insertBoard(Connection connection, Board board) {
+		int result = 0;
+		PreparedStatement pstmt = null;
+		String query = "INSERT INTO NOTICE VALUES(SEQ_NOTICE_NO.NEXTVAL,?,?,?,DEFAULT,DEFAULT,DEFAULT,DEFAULT)";
+		
+		try {
+			pstmt = connection.prepareStatement(query);
+			
+			pstmt.setInt(1, board.getWrite_no());
+			pstmt.setString(2, board.getTitle());
+			pstmt.setString(3, board.getContent());
+			pstmt.setString(4, board.getOriginalFileName());
+			pstmt.setString(5, board.getRenamedFileName());
+			
+			result = pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			close(pstmt);
+		}	
+		return result;
 	}
 
 }
