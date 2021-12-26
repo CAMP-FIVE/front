@@ -33,6 +33,7 @@ public class Board {
 	private String status;
 	
 	private String originalFileName;
+
 	
 	private String renamedFileName;
 }

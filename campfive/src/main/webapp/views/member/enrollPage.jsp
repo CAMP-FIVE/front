@@ -12,31 +12,20 @@
 <script src="${ path }/resources/js/jquery-3.6.0.js"></script>
 </head>
 <body>
-<jsp:include page="/views/common/header.jsp"/>
-
+	<jsp:include page="/views/common/header.jsp"/>
 <section>
-<table>
-	<tr>
-    	<td>
-        	<img src="../../resources/images/userEnroll.png" alt=""><br><br>
+    <div class="wrap1">
+        <div id="user">
+            <img src="../../resources/images/userEnroll.png" alt="" width="150px"><br><br>
             <button onclick="location.href='${ pageContext.request.contextPath }/views/member/enrollUser.jsp'">일반 회원 가입</button>
-		</td>
-		<td>
-        	<img src="../../resources/images/businessEnroll.png" alt=""><br><br>
+        </div>
+        
+        <div id="business">
+            <img src="../../resources/images/businessEnroll.png" alt="" width="150px"><br><br>
             <button onclick="location.href='${ pageContext.request.contextPath }/views/member/enrollBusiness.jsp'">사업자 회원 가입</button>
-		</td>
-	</tr>
-</table>
-
-</section>
-
-<script>
-	
-</script>
-  <jsp:include page="/views/common/footer.jsp"/>    
+        </div>
+    </div>
+	</section>
+  	<jsp:include page="/views/common/footer.jsp"/>    
 </body>
 </html>
-
-
-
-

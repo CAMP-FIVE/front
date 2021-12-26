@@ -46,12 +46,11 @@ footer p span {
 
 #btnimg {
     list-style-type: none;
-    text-align: center;
-    display: inline-block;
+    float: left;
+    
 }
 
 #btnimage {
-    margin-top: 5px;
-    margin-right: 100px;
+    margin-top: 10px;
     float: right;
 }

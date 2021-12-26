@@ -88,6 +88,16 @@ public class BoardService {
 		close(connection);
 		return result;
 	}
+	public Board findBoardByNo(int no, boolean hasRead) {
+		Board board = null;
+		Connection conection = getConncetion();
+		
+		board = dao.findBoardByNo(conection, no);
+		
+		close(conection);		
+	
+		return board;
+	}
 
 
 }

@@ -18,7 +18,7 @@
   <div id="headers">
 
         <div class="logo">
-            <a href=""><img src="${pageContext.request.contextPath}/resources/images/logo.png"></a>
+            <img src="${pageContext.request.contextPath}/resources/images/logo.png">
             <div class="menu">
                 <label for="expand-menu"><div>메뉴</div></label>
                 <input type="checkbox" id="expand-menu" name="expand-menu" class="inp">
@@ -62,7 +62,7 @@
                     <li>
                         <a href="">마이페이지</a>
                         <ul>
-                            <li><a href="${pageContext.request.contextPath}/member/myPage">회원정보 변경</a></li>
+                            <li><a href="${pageContext.request.contextPath}/views/member/myPage.jsp">회원정보 변경</a></li>
                             <li><a href="">찜한목록 보기</a></li>
                         </ul>
                     </li>

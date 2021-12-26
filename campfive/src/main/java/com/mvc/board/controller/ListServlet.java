@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.mvc.board.model.service.BoardService;
+import com.mvc.board.model.vo.Board;
 import com.mvc.board.model.vo.Board1;
 import com.mvc.common.util.PageInfo;
 
@@ -33,6 +34,7 @@ public class ListServlet extends HttpServlet {
     	int listCount = 0;
     	PageInfo pageInfo = null;
     	List<Board1> list = null;
+  
     	
     	System.out.println("boardlist");
     	
@@ -45,6 +47,7 @@ public class ListServlet extends HttpServlet {
     	listCount = service.getBoardCount();
     	pageInfo = new PageInfo(page, 4, listCount, 3);
     	list = service.getBoardList1(pageInfo);
+    ;
     	
     	System.out.println(listCount);
     	System.out.println(list);

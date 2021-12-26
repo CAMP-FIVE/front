@@ -5,6 +5,7 @@ section{
     margin:auto;
 }
 section #memberEnrollFrm{
+    border:1px solid black;
     margin:auto;
 }
 #enrollTitle {

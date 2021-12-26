@@ -15,17 +15,14 @@
 <link rel="stylesheet" href="/resources/css/list.css" type="text/css">
 <script src="/resources/js/jquery-3.6.0.js"></script> 
 <script src="/resources/js/popup.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <title>Insert title here</title>
-
-
-</style>
 
 </head>
 
 <body>
 	<section>
-
         <div id="popup">
             <div id="popmenu">
                 <div class="checkdiv"> 
@@ -65,75 +62,22 @@
             </div>
         </div>
 
-    <br>
-    
-		<div class="div1">
-			<div id="contents">캠핑장 상세검색</div>
-			<form action="">
-				<div class="div2">
-
-					지역 <br> <select name="" id="" onchange="categoryChange(this)" name="searchField">
-						<option value>시/도 선택</option>
-						<option value="general01">강원</option>
-						<option value="general02">경기</option>
-						<option value="general03">경남</option>
-						<option value="general04">경북</option>
-						<option value="general05">광주</option>
-						<option value="general06">대구</option>
-						<option value="general07">대전</option>
-						<option value="general08">부산</option>
-						<option value="general09">서울</option>
-						<option value="general10">울산</option>
-						<option value="general11">인천</option>
-						<option value="general12">전남</option>
-						<option value="general13">전북</option>
-						<option value="general14">제주</option>
-						<option value="general15">충남</option>
-						<option value="general16">충북</option>
-					</select> <select name="" id="state" name="searchField2">
-						<option>군/구 선택</option>
-					</select>
-
-				</div>
-
-				<br>
-				<div class="div2">
-					테마 <br> <select name="" id="">
-						<option>test</option>
-						<option>test</option>
-						<option>test</option>
-						<option>test</option>
-						<option>test</option>
-
-					</select>
-				</div>
-				<br>
-				<div class="div2">
-					키워드 검색 <br> <select name="searchField1" id="">
-						<option>test</option>
-						<option>test</option>
-						<option>test</option>
-						<option>test</option>
-					</select> <select name="searchField2" id="" class="sel2">
-						<option>test</option>
-						<option>test</option>
-						<option>test</option>
-
-					</select> <select name="searchField3" id="" class="sel2">
-						<option>test</option>
-						<option>test</option>
-						<option>test</option>
-						<option>test</option>
-					</select> <input type="submit">
-				</div>
-			</form>
-
-
-		</div>
-
-		<br>
-		<br>
-		<hr>
+      <section id="sec1">
+	<button id="btnsearch">상세검색</button>
+    <div id="select_box" style="border: 1px solid mediumseagreen">
+        <div id="select_contents">
+            <p class="ptag1">키워드 검색 <input type="text" class="inp1"></p>
+            <p class="ptag1">도시/군/구 <select name="addressRegion" id="addressRegion2"></select>
+                <select name="addressDo" id="addressDo2"></select>
+                <select name="addressSiGunGu" id="addressSiGunGu2"></select>
+                <p class="ptag1">테마별<input type="text" id="themainput" class="inp1"><button id="btn" herf="#">검색</button></p>
+                <script src="/resources/js/selectbox.js"></script>
+                </p>
+            </div>
+        </div>
+    </section>
+   
+	
 
 		<div class="div3">
 
@@ -200,6 +144,6 @@
 		</div>
 
 	</section>
-
+	<jsp:include page="/views/common/footer.jsp" />
 </body>
 </html>

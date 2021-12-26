@@ -1,6 +1,6 @@
 package com.mvc.board.model.dao;
 
-import static com.mvc.common.jdbc.JDBCTemplate.*;
+import static com.mvc.common.jdbc.JDBCTemplate.close;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -41,6 +41,56 @@ public class BoardDao {
 		
 		return count;
 	}
+	
+	public Board findBoardByNo(Connection conection, int no) {
+		Board board = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String query = "SELECT"  
+				+ "B.NO,"
+				+ "B.TITLE, " 
+				+ "M.ID,"
+				+ "B.HIT,"
+				+ "B.ORIGINAL_FILENAME"
+				+ "B.RENAMED_FILENAME"
+				+ "B.CONTENT," 
+				+ "B.CREATE_DATE,"
+				+ "B.MODIFY_DATE "
+				+ "FROM BOARD B "
+				+ "JOIN MEMBER M ON(B.WRITER_NO = M.NO) "
+				+ "WHERE B.STATUS = 'Y' AND B.NO=?";
+	try {
+	
+		pstmt = conection.prepareStatement(query);
+		
+		pstmt.setInt(1, no);
+		
+		rs = pstmt.executeQuery();
+		
+		if (rs.next()) {
+			board = new Board();
+			
+			board.setNo(rs.getInt("NO"));
+			board.setTitle(rs.getString("TITLE"));
+			board.setWrite_no(rs.getInt("WRITE_NO"));
+			board.setHit(rs.getInt("HIT"));
+			board.setOriginalFileName(rs.getNString("ORIGINAL_FILENAME"));
+			board.setRenamedFileName(rs.getNString("RENAMED_FILENAME"));
+			board.setContent(rs.getString("CONTENT"));
+			board.setCreate_date(rs.getDate("B.CREATE_DATE"));
+			board.setModify_date(rs.getDate("MODIFY_DATE"));
+		}
+			
+	} catch (SQLException e) {
+		e.printStackTrace();
+		
+	}finally {
+		close(rs);
+		close(pstmt);
+		
+	}
+	return board;
+	}
 
 	public List<Board> findAll(Connection connection, PageInfo pageInfo) {
 
@@ -48,11 +98,11 @@ public class BoardDao {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		String query = 
-				"SELECT RNUM, NO, ID, TITLE, CONTENT, CREATE_DATE, MODIFY_DATE, HIT, STATUS " +
+				"SELECT RNUM, NO, ID, TITLE, CONTENT, ORIGINALFILENAME, RENAMEDFILENAME, CREATE_DATE, MODIFY_DATE, HIT, STATUS " +
 						"FROM ( " +
-						"  SELECT ROWNUM AS RNUM, NO, ID, TITLE, CONTENT, CREATE_DATE, MODIFY_DATE, HIT, STATUS " +
+						"  SELECT ROWNUM AS RNUM, NO, ID, TITLE, CONTENT, ORIGINALFILENAME, RENAMEDFILENAME, CREATE_DATE, MODIFY_DATE, HIT, STATUS " +
 						"  FROM ( " +
-						"    SELECT ROWNUM, R.NO, M.ID, R.TITLE, R.CONTENT, R.CREATE_DATE, R.MODIFY_DATE, R.HIT, R.STATUS " +
+						"    SELECT ROWNUM, R.NO, M.ID, R.TITLE, R.CONTENT, R.ORIGINALFILENAME, R.RENAMEDFILENAME, R.CREATE_DATE, R.MODIFY_DATE, R.HIT, R.STATUS " +
 						"    FROM REVIEW R JOIN MEMBER M ON(R.WRITE_NO = M.NO) " +
 						"    WHERE R.STATUS = 'Y' ORDER BY R.NO DESC " +
 						"  ) " +
@@ -75,6 +125,8 @@ public class BoardDao {
 				board.setId(rs.getString("ID"));
 				board.setTitle(rs.getString("TITLE"));
 				board.setContent(rs.getString("CONTENT"));
+				board.setOriginalFileName(rs.getString("ORIGINALFILENAME"));
+				board.setRenamedFileName(rs.getString("RENAMEDFILENAME"));
 				board.setCreate_date(rs.getDate("CREATE_DATE"));
 				board.setModify_date(rs.getDate("MODIFY_DATE"));
 				board.setHit(rs.getInt("HIT"));
@@ -96,7 +148,7 @@ public class BoardDao {
 	public int insertBoard(Connection connection, Board board) {
 		int result = 0;
 		PreparedStatement pstmt = null;
-		String query = "INSERT INTO NOTICE VALUES(SEQ_NOTICE_NO.NEXTVAL,?,?,?,DEFAULT,DEFAULT,DEFAULT,DEFAULT)";
+		String query = "INSERT INTO NOTICE VALUES(SEQ_NOTICE_NO.NEXTVAL,?,?,?,?,?,DEFAULT,DEFAULT,DEFAULT,DEFAULT)";
 		
 		try {
 			pstmt = connection.prepareStatement(query);
