@@ -1,0 +1,154 @@
+@charset "UTF-8";
+  .div1{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        background-color: rgb(45, 207, 153);
+        width: 600px;
+        height: 300px;
+        font-size: 15px;
+        font-weight: 600;
+        }
+        
+        
+        .div2{
+            display: inline-block;
+            margin-top: 4%;
+        }
+        select{
+            width: 100px;
+            height: 35px;
+            margin-left: 5px;
+            
+        }
+        .sel1{
+            float: right;
+        }
+        .sel2{
+            margin-left: 30px;
+        }
+
+        .div3{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        background-color: rgb(45, 207, 153);
+        width: 1000px;
+        height: 600px;
+        }
+
+        .tab1{
+            border: 1px solid black;
+            text-align: center;
+            margin: auto;
+            width: 100%;
+            border-collapse: collapse;
+            
+        }
+        td{
+            border: 1px solid black;
+            padding: 50px;
+        }
+        th{
+            border: 1px solid black;
+        }
+        
+
+        .th2{
+            width: 50px;
+        }
+        .th3{
+            width: 50px;
+        }
+        .th4{
+            width: 50px;
+        }
+        
+        
+        .div11{
+        margin-left: 800px;
+        }
+        
+        .write{
+        background-color: gainsboro;
+        color: black;
+        font-size: large;
+        }
+        
+
+
+
+        #popup {
+            display: none; 
+            position: absolute;
+            width: 1000px;
+            height: 600px;
+            margin-left: 100px;
+            background: rgba(0,0,0,0.9);
+            /* width: 70%;
+            height: 70%; */
+        }
+
+        #popmenu {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 900px;
+            height: 500px;
+            background: #fff;
+        }
+        .sub{
+            position: absolute;
+            left: 40%;
+            bottom: 10px;
+            transform: translate(-50%,0);
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background: #007AAE;
+            cursor: pointer;
+        }
+
+
+        .exit {
+            position: absolute;
+            left: 60%;
+            bottom: 10px;
+            transform: translate(-50%,0);
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background: #007AAE;
+            cursor: pointer;
+        }
+
+        #contents {
+            width: 300px;
+            height: px;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            background: rgba(142, 155, 24, 0.829);
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: auto;
+        
+        }
+
+        .checkdiv{
+            border: 1px solid black;
+            width: 800px;
+            height: 100px;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+
+        form{
+            margin-top: 10px;
+        }

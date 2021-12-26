@@ -1,58 +1,51 @@
-@charset "UTF-8";
-
-section {
-    width:1200px;
-    margin:auto;
-}
-section>div{
-    margin:auto;
-}
-#findIdTitle, #findPwdTitle {
-    width: 400px;
-    background-color:beige;
-    border-bottom:2px solid gray;
-    border-top:2px solid gray;
+section #findId-container, section #findPwd-container {
     text-align:center;
-    padding-top:20px;
+}
+
+section #findId-container input, section #findPwd-container input {
+    margin:3px;
+}
+
+section #findIdTbl, section #findPwdTbl {
+    margin:0 auto;
+}
+
+section #findIdTbl th, section #findPwdTbl th{
+    padding:0 10px; 
+    text-align:right;
+}
+
+section #findIdTbl td, section #findPwdTbl td {
+    padding:0 10px;
+    text-align:left;
+}
+
+#findIdTitle, #findPwdTitle {
+    border-bottom:1px solid gray;
+    text-align:center;
     padding-bottom:20px;
-    margin: auto;
-    margin-top:50px;
+    margin-top:100px;
     margin-bottom:20px;
     font-size:large;
     font-weight:bold;
 }
-table{
-    width: 60%;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom:50px;
+
+.wrap {
+    width:100%;
+    height:600px;
 }
-table td:not(:first-child){
-    width:60%;
-    padding:10px;
+
+#findIdTbl th, #findPwdTbl th {
+    color:black;
+    font-size:medium;
 }
-table th{
-    text-align:right;
-}
-table tr:not(:last-child) input:first-child {
+
+#findIdTbl td input:first-child, #findPwdTbl td input:first-child {
     background-color:darkseagreen;
 }
-table tr:last-child{
-    text-align:center;
-}
-table tr:last-child input{
-    margin:15px;
-}
-section #findIdTbl tr:not(:first-child) th, section #findPwdTbl tr:not(:first-child) th{
-    padding:0 10px; 
-    text-align:right;
-    width:120px;
-}
+
 #btn1 {
     margin:10px;
-    margin-bottom:50px;
+    margin-bottom:60px;
     text-align:center;
-}
-#findIdTbl tr:not(:last-child) td input:first-child, #findPwdTbl tr:not(:last-child) td input:first-child{
-    background-color:darkseagreen;
 }
