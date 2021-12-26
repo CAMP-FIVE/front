@@ -36,9 +36,7 @@ public class BoardDao {
 			close(rs);
 			close(pstmt);
 		}
-		
-		
-		
+
 		return count;
 	}
 	
@@ -148,7 +146,7 @@ public class BoardDao {
 	public int insertBoard(Connection connection, Board board) {
 		int result = 0;
 		PreparedStatement pstmt = null;
-		String query = "INSERT INTO NOTICE VALUES(SEQ_NOTICE_NO.NEXTVAL,?,?,?,?,?,DEFAULT,DEFAULT,DEFAULT,DEFAULT)";
+		String query = "INSERT INTO REVIEW VALUES(SEQ_REVIEW_NO.NEXTVAL,?,?,?,?,?,DEFAULT,DEFAULT,DEFAULT,DEFAULT)";
 		
 		try {
 			pstmt = connection.prepareStatement(query);
@@ -188,12 +186,11 @@ public class BoardDao {
 			pstmt = connection.prepareStatement(query);
 			
 			pstmt.setInt(1, pageInfo.getStartList());
-			pstmt.setInt(2, pageInfo.getEndList()); //占쎈땾占쎌젟?
+			pstmt.setInt(2, pageInfo.getEndList()); 
 			
 			rs = pstmt.executeQuery();
 			
-			
-			System.out.println("占쎄쉐�⑨옙");
+		
 			while(rs.next()) {
 				Board1 board = new Board1();
 				

@@ -35,7 +35,7 @@
                     </table>
              	<div id="btn1">
                     <button onclick="history.back();">이전으로</button>
-                    <input type="submit" value="등록">
+                    <input type="submit" value="등록" >
                 </div>    
 				</form>
  			</section>
