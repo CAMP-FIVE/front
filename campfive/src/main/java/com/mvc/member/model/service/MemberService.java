@@ -91,6 +91,28 @@ public class MemberService {
 		return member;
 	
 	}
+
+	public Member findId(String userName, String phone) {
+		Connection connection = getConncetion();
+		Member member = dao.findId(connection, userName, phone);
+		
+		close(connection);
+		
+		System.out.println("member : " + member);
+		
+		return member;
+	}
+
+	public Member findPwd(String userName, String userId, String phone) {
+		Connection connection = getConncetion();
+		Member member = dao.findPwd(connection, userName, userId, phone);
+		
+		close(connection);
+		
+		System.out.println("member : " + member);
+		
+		return member;
+	}
 	
 	
 
