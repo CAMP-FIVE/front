@@ -18,7 +18,7 @@
   <div id="headers">
 
         <div class="logo">
-            <img src="${pageContext.request.contextPath}/resources/img/logo.png">
+            <a href=""><img src="${pageContext.request.contextPath}/resources/images/logo.png"></a>
             <div class="menu">
                 <label for="expand-menu"><div>메뉴</div></label>
                 <input type="checkbox" id="expand-menu" name="expand-menu" class="inp">
